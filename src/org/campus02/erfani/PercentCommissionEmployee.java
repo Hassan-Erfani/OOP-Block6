@@ -9,7 +9,6 @@ public class PercentCommissionEmployee extends Employee{
     }
 
     public double getFullSalary(){
-
         return ( percentCommission * baseSalary ) / 100 + baseSalary;
     }
 }
