@@ -9,25 +9,20 @@ public class GiroKonto extends Konto{
     }
 
     public void einzahlen( double value ) {
-
+        this.kontostand += value;
     }
 
     public void auszahlen( double value ) {
-
-    }
-
-    public double getLimit() {
-        return limit;
-    }
-
-    public void setLimit(double limit) {
-        this.limit = limit;
-    }
-
-    @Override
-    public String toString() {
-        return "GiroKonto{" +
-                "limit=" + limit +
-                '}';
+        if( value != 0 ) {
+            if( value < this.kontostand ) {
+                if( value >= this.limit ) {
+                    System.out.println( "Auszahlung nicht möglich, Limit überschritten." );
+                } else {
+                    this.kontostand -= value;
+                }
+            } else {
+                System.out.println( "Auszahlung nicht möglich, Kontostand niedrig." );
+            }
+        }
     }
 }
