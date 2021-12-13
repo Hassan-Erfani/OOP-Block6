@@ -16,4 +16,18 @@ public class GiroKonto extends Konto{
 
     }
 
+    public double getLimit() {
+        return limit;
+    }
+
+    public void setLimit(double limit) {
+        this.limit = limit;
+    }
+
+    @Override
+    public String toString() {
+        return "GiroKonto{" +
+                "limit=" + limit +
+                '}';
+    }
 }
