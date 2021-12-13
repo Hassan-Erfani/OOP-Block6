@@ -18,10 +18,10 @@ public class Konto {
             if( value < this.kontostand ) {
                 this.kontostand -= value;
             } else {
-                System.out.println( "Auszahlung nicht möglich, Kontostand niedrig" );
+                System.out.println( "Auszahlung nicht möglich, Kontostand niedrig." );
             }
         } else {
-            System.out.println( "Bitte geben Sie einen Wert, größer als Null" );
+            System.out.println( "Bitte geben Sie einen Wert größer als 0 ein." );
         }
 
     }
@@ -30,7 +30,7 @@ public class Konto {
         return inhaber;
     }
 
-    public void setInhaber(String inhaber) {
+    public void setInhaber( String inhaber ) {
         this.inhaber = inhaber;
     }
 
@@ -38,7 +38,7 @@ public class Konto {
         return kontostand;
     }
 
-    public void setKontostand(double kontostand) {
+    public void setKontostand( double kontostand ) {
         this.kontostand = kontostand;
     }
 
