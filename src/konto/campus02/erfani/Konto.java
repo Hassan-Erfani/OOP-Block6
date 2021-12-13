@@ -4,7 +4,7 @@ public class Konto {
     protected String inhaber;
     protected double kontostand;
 
-    public Konto(String inhaber ) {
+    public Konto( String inhaber ) {
         this.inhaber = inhaber;
     }
 
