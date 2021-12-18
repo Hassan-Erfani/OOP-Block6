@@ -20,15 +20,18 @@ public class KontoDemoApp {
         System.out.println( "Auszahlung erfolgreich!, neuer Kontostand: " + konto1.getKontostand() );*/
 
         // DemoApp for GiroKonto class
-        /*GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
-
+        GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
+        System.out.println("Kontostand: " + giroKonto.getKontostand() );
         giroKonto.einzahlen( 1_500 );
+        System.out.println("Kontostand: " + giroKonto.getKontostand() );
+        giroKonto.auszahlen(200);
+        giroKonto.auszahlen(2000);
+        giroKonto.auszahlen(700);
+        giroKonto.auszahlen(0);
+        giroKonto.auszahlen(101);
+        giroKonto.auszahlen(5);
+        giroKonto.auszahlen( 100 );
 
-        System.out.println( "Error => Limit überschritten:" );
-        giroKonto.auszahlen( 1_000 );
-
-        giroKonto.auszahlen( 900 );
-        System.out.println( "Auszahlung erfolgreich!, neuer Kontostand: " + giroKonto.getKontostand() );*/
 
 
 

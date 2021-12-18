@@ -16,19 +16,4 @@ public class JugendGiroKonto extends GiroKonto{
     public void auszahlen( double value ) {
 
     }
-
-    public double getBuchungslimit() {
-        return buchungslimit;
-    }
-
-    public void setBuchungslimit(double buchungslimit) {
-        this.buchungslimit = buchungslimit;
-    }
-
-    @Override
-    public String toString() {
-        return "JugendGiroKonto{" +
-                "buchungslimit=" + buchungslimit +
-                '}';
-    }
 }

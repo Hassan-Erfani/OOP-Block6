@@ -18,10 +18,10 @@ public class Konto {
             if( value < this.kontostand ) {
                 this.kontostand -= value;
             } else {
-                System.out.println( "Auszahlung nicht möglich, Kontostand niedrig." );
+                System.out.println( "Eine Auszahlung von " + value + " nicht möglichAuszahlung nicht möglich, Kontostand niedrig." );
             }
         } else {
-            System.out.println( "Bitte geben Sie einen Wert größer als 0 ein." );
+            System.out.println( "Bitte geben Sie einen Betrag größer als 0 ein." );
         }
 
     }
