@@ -10,10 +10,15 @@ public class JugendGiroKonto extends GiroKonto{
     }
 
     public void einzahlen( double value ) {
-
+        super.einzahlen(value);
     }
 
     public void auszahlen( double value ) {
+        if (value <= buchungslimit) {
+            super.auszahlen(value);
+        } else {
+            System.out.println("Der Betrag: " + value + " kann nicht abgebucht werden, Buchungslimit überschritten");
+        }
 
     }
 }

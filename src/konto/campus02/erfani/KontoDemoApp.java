@@ -31,6 +31,15 @@ public class KontoDemoApp {
         giroKonto.auszahlen(5);
         giroKonto.auszahlen( 100 );*/
 
+        // DemoApp for JugendGiroKonto
+        JugendGiroKonto jugendGiroKonto = new JugendGiroKonto("John", 1_000, 400);
+
+        jugendGiroKonto.einzahlen(1000);
+        jugendGiroKonto.auszahlen(200);
+        jugendGiroKonto.auszahlen(600);
+        jugendGiroKonto.auszahlen(0);
+        jugendGiroKonto.auszahlen(500);
+
 
 
 
