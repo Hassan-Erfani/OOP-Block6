@@ -14,7 +14,7 @@ public class Konto {
     }
 
     public void auszahlen( double value ) {
-        if( value != 0 ) {
+        if( value == 0 ) {
             System.out.println( "Bitte geben Sie einen Betrag größer als 0 ein." );
         }
             if( value < this.kontostand ) {

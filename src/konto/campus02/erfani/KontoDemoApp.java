@@ -5,7 +5,7 @@ public class KontoDemoApp {
     public static void main(String[] args) {
 
         // DemoApp for Konto class
-      /*Konto konto1 = new Konto( "Max" );
+     /* Konto konto1 = new Konto( "Max" );
 
         konto1.einzahlen( 500 );
         System.out.println( "Kontostand nach Einzahlung, Kontostand: " + konto1.getKontostand() );
@@ -20,7 +20,7 @@ public class KontoDemoApp {
         System.out.println( "Auszahlung erfolgreich!, neuer Kontostand: " + konto1.getKontostand() );*/
 
         // DemoApp for GiroKonto class
-        GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
+        /*GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
         System.out.println("Kontostand: " + giroKonto.getKontostand() );
         giroKonto.einzahlen( 1_500 );
         System.out.println("Kontostand: " + giroKonto.getKontostand() );
@@ -30,7 +30,7 @@ public class KontoDemoApp {
         giroKonto.auszahlen(0);
         giroKonto.auszahlen(101);
         giroKonto.auszahlen(5);
-        giroKonto.auszahlen( 100 );
+        giroKonto.auszahlen( 100 );*/
 
 
 
