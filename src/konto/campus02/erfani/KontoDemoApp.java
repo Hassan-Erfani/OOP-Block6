@@ -12,9 +12,8 @@ public class KontoDemoApp {
         konto1.auszahlen( 0 );
         konto1.auszahlen( 1600 );*/
 
-
         // DemoApp for GiroKonto class
-        GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
+        /*GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
         giroKonto.einzahlen( 1_500 );
 
         giroKonto.auszahlen(200);
@@ -23,7 +22,7 @@ public class KontoDemoApp {
         giroKonto.auszahlen(0);
         giroKonto.auszahlen(101);
         giroKonto.auszahlen(5);
-        giroKonto.auszahlen( 100 );
+        giroKonto.auszahlen( 100 );*/
 
         // DemoApp for JugendGiroKonto
       /*  JugendGiroKonto jugendGiroKonto = new JugendGiroKonto("John", 1_000, 400);
@@ -34,10 +33,13 @@ public class KontoDemoApp {
         jugendGiroKonto.auszahlen(0);
         jugendGiroKonto.auszahlen(500);*/
 
+        // DemoApp for SparKonto
+        SparKonto sparKonto= new SparKonto("John");
 
+        sparKonto.einzahlen(500);
 
-
-
-
+        sparKonto.auszahlen(300);
+        sparKonto.auszahlen(0);
+        sparKonto.auszahlen(201);
     }
 }
