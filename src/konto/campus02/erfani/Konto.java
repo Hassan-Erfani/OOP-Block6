@@ -15,15 +15,13 @@ public class Konto {
 
     public void auszahlen( double value ) {
         if( value != 0 ) {
+            System.out.println( "Bitte geben Sie einen Betrag größer als 0 ein." );
+        }
             if( value < this.kontostand ) {
                 this.kontostand -= value;
             } else {
                 System.out.println( "Eine Auszahlung von " + value + " nicht möglichAuszahlung nicht möglich, Kontostand niedrig." );
             }
-        } else {
-            System.out.println( "Bitte geben Sie einen Betrag größer als 0 ein." );
-        }
-
     }
 
     public String getInhaber() {
