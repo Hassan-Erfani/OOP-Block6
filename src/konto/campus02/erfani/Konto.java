@@ -12,6 +12,7 @@ public class Konto {
     public void einzahlen(double value) {
         this.kontostand += value;
         System.out.println("Der Betrag: " + value + ", wurde gutgeschrieben");
+        System.out.println("Kontostand: " + getKontostand());
     }
 
     public void auszahlen(double value) {
@@ -19,13 +20,11 @@ public class Konto {
             System.out.println("Bitte geben Sie einen Betrag größer als 0 ein.");
             return;
         }
-            if(value <= this.kontostand && value != 0) {
-                this.kontostand -= value;
-                System.out.println("Der Betrag: " + value + " wurde erfolgreich abgebucht");
-                System.out.println("Kontostand: " + this.getKontostand());
-            } else {
-                System.out.println("Eine Auszahlung von " + value + " nicht möglich, Kontostand niedrig.");
-            }
+
+        this.kontostand -= value;
+        System.out.println("Der Betrag: " + value + " wurde erfolgreich abgebucht");
+        System.out.println("Kontostand: " + this.getKontostand());
+
     }
 
     public String getInhaber() {

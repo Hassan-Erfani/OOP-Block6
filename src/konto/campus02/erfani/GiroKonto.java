@@ -14,18 +14,20 @@ public class GiroKonto extends Konto{
     }
 
     public void auszahlen(double value) {
+        // limit check
+        if (value > this.limit) {
+            System.out.println("Der Betrag: " + value + ", kann nicht abgebucht werden, Limit überschritten");
+            return;
+        }
 
-            // check if value is less than limit and save the limit in tmp
-            if (value <= this.limit && tmp < this.limit) {
-                tmp += value;
-            }
-            // check if all transactions has reached the limit
-            if (tmp < this.limit) {
-                // check if value is less than balance
-              super.auszahlen(value);
-            } else {
-                tmp -= value;
-                System.out.println("Der Betrag: " + value + ", kann nicht abgebucht werden, Limit überschritten");
-            }
+        tmp += value;
+
+        // check if tmp has reached the limit
+        if (tmp <= this.limit) {
+            super.auszahlen(value);
+        } else {
+            tmp -= value;
+            System.out.println("Der Betrag: " + value + ", kann nicht abgebucht werden, Limit überschritten");
+        }
     }
 }
