@@ -4,23 +4,27 @@ public class Konto {
     protected String inhaber;
     protected double kontostand;
 
-    public Konto( String inhaber ) {
+    public Konto(String inhaber) {
         this.inhaber = inhaber;
         this.kontostand = 0.00;
     }
 
-    public void einzahlen( double value ) {
+    public void einzahlen(double value) {
         this.kontostand += value;
+        System.out.println("Der Betrag: " + value + ", wurde gutgeschrieben");
     }
 
-    public void auszahlen( double value ) {
-        if( value == 0 ) {
-            System.out.println( "Bitte geben Sie einen Betrag größer als 0 ein." );
+    public void auszahlen(double value) {
+        if(value == 0) {
+            System.out.println("Bitte geben Sie einen Betrag größer als 0 ein.");
+            return;
         }
-            if( value < this.kontostand ) {
+            if(value <= this.kontostand && value != 0) {
                 this.kontostand -= value;
+                System.out.println("Der Betrag: " + value + " wurde erfolgreich abgebucht");
+                System.out.println("Kontostand: " + this.getKontostand());
             } else {
-                System.out.println( "Eine Auszahlung von " + value + " nicht möglichAuszahlung nicht möglich, Kontostand niedrig." );
+                System.out.println("Eine Auszahlung von " + value + " nicht möglich, Kontostand niedrig.");
             }
     }
 
@@ -28,7 +32,7 @@ public class Konto {
         return inhaber;
     }
 
-    public void setInhaber( String inhaber ) {
+    public void setInhaber(String inhaber) {
         this.inhaber = inhaber;
     }
 

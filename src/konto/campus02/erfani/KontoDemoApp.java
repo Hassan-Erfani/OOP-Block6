@@ -21,7 +21,6 @@ public class KontoDemoApp {
 
         // DemoApp for GiroKonto class
         /*GiroKonto giroKonto = new GiroKonto("Susi", 1_000);
-        System.out.println("Kontostand: " + giroKonto.getKontostand() );
         giroKonto.einzahlen( 1_500 );
         System.out.println("Kontostand: " + giroKonto.getKontostand() );
         giroKonto.auszahlen(200);
